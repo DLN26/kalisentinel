@@ -1,0 +1,13 @@
+[Unit]
+Description=KaliSentinel Log Monitor & Blue Team Protection
+After=network.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/bin/python3 /opt/kalisentinel/kalisentinel.py --output /var/log/kalisentinel_alerts.jsonl --state-dir /var/lib/kalisentinel --config /etc/kalisentinel/config.json --ioc-file /etc/kalisentinel/iocs.json --unit-file /etc/systemd/system/kalisentinel.service
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target

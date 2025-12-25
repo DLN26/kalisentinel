@@ -1,0 +1,18 @@
+{
+  "sha256": [
+    "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+  ],
+  "paths": [
+    "/tmp/suspicious.bin"
+  ],
+  "process_names": [
+    "xmrig",
+    "badproc"
+  ],
+  "remote_ips": [
+    "1.2.3.4"
+  ],
+  "domains": [
+    "evil.example"
+  ]
+}

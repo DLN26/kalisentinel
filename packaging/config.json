@@ -1,0 +1,16 @@
+{
+  "whitelist_ips": ["127.0.0.1", "::1"],
+  "webhook_url": "",
+
+  "persistence_interval": 20,
+
+  "dns_interval": 5,
+  "dns_burst_window": 60,
+  "dns_burst_max": 120,
+
+  "ioc_interval": 60,
+  "ioc_max_file_mb": 30,
+  "ioc_paths": ["/usr/local/bin", "/usr/local/sbin", "/tmp", "/var/tmp"],
+
+  "tamper_interval": 15
+}
