@@ -2,7 +2,7 @@
 
 KaliSentinel ist ein leichtgewichtiges Blue-Team Monitoring-Tool für Linux/Kali:
 
-Tested on Kali Linux 2025.x (systemd-based)
+> Tested on Kali Linux 2025.x (systemd-based)
 
 - **BASE**: Log-Monitoring (SSH/Sudo/Cron) + Network-Detection via `ss`
 - **MOD1**: Persistence Detection (systemd/cron/ssh/rc.local …)
