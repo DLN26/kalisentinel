@@ -34,9 +34,16 @@ Output: **JSONL Alerts** nach `/var/log/kalisentinel_alerts.jsonl`.
 ### 1) Dateien kopieren
 ```bash
 sudo mkdir -p /opt/kalisentinel /etc/kalisentinel /var/lib/kalisentinel
+
 sudo cp kalisentinel.py /opt/kalisentinel/kalisentinel.py
 sudo cp packaging/config.json /etc/kalisentinel/config.json
 sudo cp packaging/iocs.json /etc/kalisentinel/iocs.json
 sudo cp packaging/kalisentinel.service /etc/systemd/system/kalisentinel.service
+
 sudo chmod 755 /opt/kalisentinel/kalisentinel.py
-sudo chmod 644 /etc/kalisentinel/config.json /etc/kalisentinel/iocs.json /etc/systemd/system/kalisentinel.service
+sudo chmod 644 /etc/kalisentinel/config.json
+sudo chmod 644 /etc/kalisentinel/iocs.json
+sudo chmod 644 /etc/systemd/system/kalisentinel.service
+
+sudo systemctl daemon-reload
+sudo systemctl enable --now kalisentinel
