@@ -1,4 +1,4 @@
-# KaliSentinel (Blue Team Mini-EDR) 🛡️
+# KaliSentinel (Blue Team Mini-EDR) 
 
 KaliSentinel ist ein leichtgewichtiges Blue-Team Monitoring-Tool für Linux/Kali:
 - **BASE**: Log-Monitoring (SSH/Sudo/Cron) + Network-Detection via `ss`
@@ -31,7 +31,7 @@ Output: **JSONL Alerts** nach `/var/log/kalisentinel_alerts.jsonl`.
 ---
 
 ## Installation (Manuell)
-### 1) Dateien kopieren
+### 1) 
 ```bash
 sudo mkdir -p /opt/kalisentinel /etc/kalisentinel /var/lib/kalisentinel
 sudo cp kalisentinel.py /opt/kalisentinel/kalisentinel.py
