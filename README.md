@@ -12,7 +12,7 @@ Output: **JSONL Alerts** nach `/var/log/kalisentinel_alerts.jsonl`.
 
 ---
 
-## Features (Kurz)
+## Features 
 - JSONL Alerts + Console Output
 - Konfiguration über `/etc/kalisentinel/config.json`
 - IOC-Datei über `/etc/kalisentinel/iocs.json`
